@@ -4,7 +4,7 @@ Enum type based on symbols. Using symbol values ensure type safety of the enum a
 
 Example:
 ```javascript
-let color = new Enum('RED', 'GREEN');
+const color = new Enum('RED', 'GREEN');
 console.log('Red value symbol: ' + color.RED.toString()); // Symbol(RED)
 console.log('Red value name: ' + color.getName(color.RED));// RED
 console.log('Size: ' + color.size); // 2
