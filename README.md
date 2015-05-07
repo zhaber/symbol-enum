@@ -6,7 +6,7 @@ Example:
 ```javascript
 let color = new Enum('RED', 'GREEN');
 console.log('Red value symbol: ' + color.RED.toString() + '<br>'); // Symbol(RED)
-console.log('Red value name: ' + color.getNameByValue(color.RED) + '<br>');// RED
+console.log('Red value name: ' + color.getName(color.RED) + '<br>');// RED
 console.log('Size: ' + color.size + '<br>'); // 2
 console.log('Values: ' + color.values() + '<br>'); // Symbol(RED), Symbol(GREEN)
 console.log('All names: ' + color.toString()); // RED,GREEN
