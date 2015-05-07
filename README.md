@@ -1,15 +1,16 @@
-# Javascript enum
+# Javascript Enum
 
-Enum type based on symbols. Using symbol values ensure type safety of the enum as each symbol value is unique.
+An enum data type that is based on the new javascript [symbol](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol) primitive type. Using symbol values ensures type safety of the enum as each symbol value is guaranteed by javascript to be unique.
 
 Example:
 ```javascript
-const color = new Enum('RED', 'GREEN');
-console.log('Red value symbol: ' + color.RED.toString()); // Symbol(RED)
-console.log('Red value name: ' + color.getName(color.RED));// RED
-console.log('Size: ' + color.size); // 2
-console.log('Values: ' + color.values()); // Symbol(RED), Symbol(GREEN)
-console.log('All names: ' + color.toString()); // RED,GREEN
+const color = new Enum('RED', 'BLUE')
+
+color.RED.toString() // Symbol(RED)
+color.getName(color.RED) // RED
+color.size // 2
+color.values() // Symbol(RED), Symbol(BLUE)
+color.toString() // RED,BLUE
 ```
 
 [Plunker demo](http://plnkr.co/edit/2RjZuQ1LNl8UI6nMlbOk?p=preview)
