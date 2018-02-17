@@ -6,11 +6,12 @@ Example:
 ```javascript
 const color = new Enum('RED', 'BLUE')
 
-color.RED.toString() // Symbol(RED)
-color.getName(color.RED) // RED
+color.RED.toString() // 'Symbol(RED)'
+color.getName(color.RED) // 'RED'
 color.size // 2
 color.values() // Symbol(RED), Symbol(BLUE)
-color.toString() // RED,BLUE
+color.toString() // 'RED,BLUE'
+color.valueOf('RED') // Symbol(RED)
 ```
 
 [Plunker demo](http://plnkr.co/edit/2RjZuQ1LNl8UI6nMlbOk?p=preview)
